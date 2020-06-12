@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text editor2</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="panel">
+            <div class="sign"><i class="uil uil-arrow"></i></div>
+            <div class="group1">
+                <div class="bold"><i class="uil uil-bold"></i></div>
+                <div class="italic"><i class="uil uil-italic"></i></div>
+                <div class="underline"><i class="uil uil-underline"></i></div>
+                <div class="strike-through"><i class="uil uil-text-strike-through"></i></div>
+            </div>
+            <div class="group2">
+                <div class="align-left"><i class="uil uil-align-left"></i></div>
+                <div class="align-center"><i class="uil uil-align-center"></i></div>
+                <div class="align-right"><i class="uil uil-align-right"></i></div>
+            </div>
+            <div class="group3">
+                <div class="font-family">A▾</div>
+                <div class="font-size">T▾</div>
+                <div class="palette"><i class="uil uil-palette"></i></div>
+                <div class="image"><i class="uil uil-image"></i></div>
+            </div>
+            <div class="padlock"><i class="uil uil-lock"></i></div>
+        </div>
+        <div class="fontFamilyBlock hidden">
+            <p class="arial">Arial</p>
+            <p class="georgia">Georgia</p>
+            <p class="impact">Impact</p>
+            <p class="tahoma">Tahoma</p>
+            <p class="times">Times New Roman</p>
+            <p class="verdana">Verdana</p>
+        </div>
+        <div class="fontSizeBlock hidden">
+            <p class="size12">12px</p>
+            <p class="size14">14px</p>
+            <p class="size16">16px</p>
+            <p class="size18">18px</p>
+            <p class="size20">20px</p>
+            <p class="size22">22px</p>
+            <p class="size25">25px</p>
+            <p class="size30">30px</p>
+        </div>
+    </div>
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+</div>
+<div class="color hidden">
+    <div class="color_header">Choose text color</div>
+    <div class="color_close">x</div>
+    <div class="color_palette">
+        <div class="lightseagreen"></div>
+        <div class="teal"></div>
+        <div class="spring"></div>
+        <div class="green"></div>
+        <div class="lightblue"></div>
+        <div class="blue"></div>
+        <div class="purple"></div>
+        <div class="rebeccapurple"></div>
+        <div class="steelblue"></div>
+        <div class="midnightblue"></div>
+        <div class="yellow"></div>
+        <div class="orange"></div>
+        <div class="peru"></div>
+        <div class="orangered"></div>
+        <div class="tomato"></div>
+        <div class="red"></div>
+        <div class="white"></div>
+        <div class="lightgray"></div>
+        <div class="lightslategrey"></div>
+        <div class="gray"></div>
+        <div class="black"></div>
+    </div>
+</div>
+<div class="background hidden">
+    <div class="background_header">Choose background color or image</div>
+    <div class="background_close">x</div>
+        <div class="background_panel">
+            <div class="colors">Colors</div>
+            <div class="images">Images</div>
+            <div class="files">Files</div>
+            <div class="blank"></div>
+        </div>
+    </div>
+        <div class="background_color">
+            <div class="background-lightseagreen"></div>
+            <div class="background-teal"></div>
+            <div class="background-spring"></div>
+            <div class="background-green"></div>
+            <div class="background-lightblue"></div>
+            <div class="background-blue"></div>
+            <div class="background-purple"></div>
+            <div class="background-rebeccapurple"></div>
+            <div class="background-steelblue"></div>
+            <div class="background-midnightblue"></div>
+            <div class="background-yellow"></div>
+            <div class="background-orange"></div>
+            <div class="background-peru"></div>
+            <div class="background-orangered"></div>
+            <div class="background-tomato"></div>
+            <div class="background-red"></div>
+            <div class="background-white"></div>
+            <div class="background-lightgray"></div>
+            <div class="background-lightslategrey"></div>
+            <div class="background-gray"></div>
+            <div class="background-black"></div>
+        </div>
+        <div class="background_image">
+            <div class="background-image1"></div>
+            <div class="background-image2"></div>
+            <div class="background-image3"></div>
+            <div class="background-image4"></div>
+            <div class="background-image5"></div>
+            <div class="background-image6"></div>
+            <div class="background-image7"></div>
+            <div class="background-image8"></div>
+            <div class="background-image9"></div>
+        </div>
+    <div class="background_file hidden">
+        <div class="upload-btn-wrapper">
+            <div class="btn">Choose file...
+                <div class="browse">Browse</div>
+            </div>
+            <input type="file" class="inp" name="myfile" />
+          </div>
+    </div>
+    <div class="signIn hidden">
+        <div class="signIn_header">Sign In</div>
+        <div class="signIn_input">
+            <form class="form">
+            <input type="text" class="login" placeholder="Login here...">
+            <input type="password" class="password" placeholder="Password here...">
+            <input type="button" value="Sign In" class="sign_btn">
+        </form>
+            <p class="input-empty">Value is empty</p>
+            <p class="input-wrong">Please check your login or password</p>
+        </div>
+    </div>
+<div class="container2 hidden">
+    <div class="header2">
+        <div class="panel2">
+            <div class="save"><i class="uil uil-save"></i></div>
+            <div class="grid"><i class="uil uil-grid"></i></div>
+            <div class="list-ul"><i class="uil uil-list-ul"></i></div>
+            <div class="list-ol"><i class="uil uil-list-ul"></i></div>
+        </div>
+    </div>
+    <textarea class="area"></textarea>
+</div>
+    <div class="create-table hidden">
+        <div class="create-table_header">Create table
+            <div class="create-table_close">x</div>
+        </div>
+        <div class="create-table_main">
+        
+        <div class="create-table_left">
+        <form class="form1">
+            <h4>Count TR</h4>
+            <input type="text" class="trCount" placeholder="Type here...">
+            <h4>Width of TD</h4>
+            <input type="text" class="tdWidth" placeholder="Type here...">
+            <h4>Width of border</h4>
+            <input type="text" class="borderWidth" placeholder="Type here...">
+            <input type="button" value="Reset" class="tableReset">
+            </form>
+        </div>
+        <div class="create-table_right">
+            <form class="form2">
+            <h4>Count TD</h4>
+            <input type="text" class="tdCount" placeholder="Type here...">
+            <h4>Height of TD</h4>
+            <input type="text" class="tdHeight" placeholder="Type here...">
+            <div class="table-select">
+            <h4>Style of border
+                <select class="tdBorderStyle">
+                    <option selected>choose style</option>
+                    <option value="dotted">dotted</option>
+                    <option value="solid">solid</option>
+                    <option value="double">double</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                </select>
+            </h4>
+            <h4>Color of border
+                <select class="tdBorderColor">
+                    <option selected>choose color</option>
+                    <option value="black">black</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                    <option value="yellow">yellow</option>
+                    <option value="white">white</option>
+                    <option value="gray">gray</option>
+                    <option value="pink">pink</option>
+                </select>
+            </h4>
+            </form>
+        </div>
+        
+            <input type="button" value="Create table" class="tableCreate">
+        </div>
+        <p class="table-invalid">Invalid value</p>
+    </div>
+</div>
+<div class="create-ol hidden">
+<div class="create-ol_header">Create Ol
+    <div class="create-ol_close">x</div>
+</div>
+<div class="create-ol_main">
+<form class="form3">
+<h4>Count li item:</h4>
+<input type="text" class="countOlLi" placeholder="Type here...">
+<h4>Type mark of list</h4>
+<select class="typeMarkOl">
+<option selected>Choose Ol type mark</option>
+<option value="decimal">1</option>
+<option value="upper-roman">I</option>
+<option value="lower-roman">i</option>
+<option value="upper-alpha">A</option>
+<option value="lower-alpha">a</option>
+</select>
+</form>
+<input type="button" value="Reset" class="olReset">
+<input type="button" value="Create list" class="createOl">
+</div>
+<p class="ol-invalid">Invalid value</p>
+</div>
+<div class="create-ul hidden">
+    <div class="create-ul_header">Create Ul
+        <div class="create-ul_close">x</div>
+    </div>
+    <div class="create-ul_main">
+    <form class="form4">
+    <h4>Count li item:</h4>
+    <input type="text" class="countUlLi" placeholder="Type here...">
+    <h4>Type mark of list</h4>
+    <select class="typeMarkUl">
+    <option selected>Choose Ul type mark</option>
+    <option value="circle">circle</option>
+    <option value="disc">disc</option>
+    <option value="square">square</option>
+    </select>
+    </form>
+    <input type="button" value="Reset" class="ulReset">
+    <input type="button" value="Create list" class="createUl">
+    </div>
+    <p class="ul-invalid">Invalid value</p>
+    </div>
+
+<div class="signOutContainer hidden">
+    <div class="signOutContainer2">
+    <div class="cancel">Cancel</div>
+    <div class="signOut">Sign Out</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

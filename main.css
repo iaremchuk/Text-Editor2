@@ -1,0 +1,859 @@
+
+/* main block style */
+.container{
+    width: 90%;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+.hidden{
+    display: none;;
+}
+.header{
+    width: 90%;
+    height: 100px;
+    background: black;
+    border: 1px solid #000;
+}
+.panel{
+    display: flex;
+    height: 50px;
+    width: 700px;
+    margin: 25px auto;
+}
+.sign{
+    background-color: lightgray;
+}
+.sign, .padlock{
+    height: 40px;
+    width: 45px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.padlock{
+    margin-left: 10px;
+    background: white;
+}
+.uil-arrow, .uil-bold, .uil-italic, .uil-underline, .uil-text-strike-through, .uil-align-left, .uil-align-center, .uil-align-right, .uil-palette, .uil-image, .uil-lock{
+    font-size: 25px;
+}
+.group1, .group3{
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.group2{
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+    display: flex; 
+}
+.bold, .italic, .underline, .strike-through, .align-left, .align-center, .align-right, .font-family, .font-size, .palette, .image{
+    height: 40px;
+    width: 45px;
+    padding-top: 10px;
+    padding-left: 5px;
+    background: white;
+}
+
+.font-family, .font-size{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.bold, .align-left, .font-family{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.strike-through, .align-right, .image{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.bold:hover,
+.italic:hover,
+.underline:hover,
+.strike-through:hover,
+.align-left:hover,
+.align-right:hover:hover,
+.align-center:hover,
+.font-family:hover,
+.font-size:hover,
+.image:hover,
+.palette:hover,
+.padlock:hover{
+    background-color: lightgrey;
+}
+.main{
+    width: 90%;
+    min-height: 500px;
+    padding-left: 5px;
+    background-position: center;
+}
+/* font family block style */
+.fontFamilyBlock{
+    height: 180px;
+    position: absolute;
+    width: 150px;
+    border-radius: 5px;
+    margin-left: 490px;
+    margin-top: -20px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.arial, .georgia, .impact, .tahoma, .times, .verdana{
+    height: 25px;
+    width: 145px;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.impact{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.tahoma{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.times{
+    font-family: 'Times New Roman', Times, serif;
+}
+.verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.arial:hover,
+.georgia:hover,
+.impact:hover,
+.times:hover,
+.verdana:hover,
+.tahoma:hover{
+    background-color: lightgray;
+}
+/* font size block style */
+.fontSizeBlock{
+    height: 235px;
+    position: absolute;
+    width: 120px;
+    border-radius: 5px;
+    margin-left: 575px;
+    margin-top: -20px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.size12, .size14, .size16, .size18, .size20, .size22, .size25, .size30{
+    width: 110px;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.size12{
+    height: 16px;
+    font-size: 12px;
+}
+.size14{
+    height: 18px;
+    font-size: 14px;
+}
+.size16{
+    height: 20px;
+    font-size: 16px;
+}
+.size18{
+    height: 22px;
+    font-size: 18px;
+}
+.size20{
+    height: 24px;
+    font-size: 20px;
+}
+.size22{
+    height: 26px;
+    font-size: 22px;
+}
+.size25{
+    height: 29px;
+    font-size: 25px;
+}
+.size30{
+    height: 34px;
+    font-size: 30px;
+}
+.size12:hover,
+.size14:hover,
+.size16:hover,
+.size18:hover,
+.size20:hover,
+.size22:hover,
+.size25:hover,
+.size30:hover{
+    background-color: lightgray;
+}
+/* color block style */
+.color{
+    position: absolute;
+    height: 220px;
+    width: 420px;
+    margin-top: -600px;
+    margin-left: 450px;
+    border-radius: 5px;
+    background-color: white;
+}
+.color_header{
+    height: 40px;
+    width: 410px;
+    font-size: 18px;
+    border-bottom: 1px solid lightgray;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.color_palette{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+.lightseagreen, .teal, .spring, .green, .lightblue, .blue, .purple, .rebeccapurple, .steelblue, .midnightblue, .yellow, .orange, .peru, .orangered, .tomato, .red, .lightgray, .white, .lightslategrey, .gray, .black{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.lightseagreen{
+    background-color: lightseagreen;
+}
+.teal{
+    background-color: teal;
+}
+.spring{
+    background-color: springgreen;
+}
+.green{
+    background-color: green;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.blue{
+    background-color: blue;
+}
+.purple{
+    background-color: purple;
+}
+.rebeccapurple{
+    background-color: rebeccapurple;
+}
+.steelblue{
+    background-color: steelblue;
+}
+.midnightblue{
+    background-color: midnightblue;
+}
+.yellow{
+    background-color: yellow;
+}
+.orange{
+    background-color: orange;
+}
+.peru{
+    background-color: peru;
+}
+.orangered{
+    background-color: orangered;
+}
+.tomato{
+    background-color: tomato;
+}
+.red{
+    background-color: red;
+}
+.white{
+    background-color: white;
+}
+.lightgray{
+    background-color: lightgray;
+}
+.lightslategrey{
+    background-color: lightslategrey;
+}
+.gray{
+    background-color: gray;
+}
+.black{
+    background-color: black;
+}
+.color_close{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    margin-top: -45px;
+    margin-left: 400px;
+}
+/* background block style */
+.background{
+    position: absolute;
+    height: 175px;
+    width: 416px;
+    margin-top: -600px;
+    margin-left: 450px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.background_header{
+    height: 40px;
+    width: 406px;
+    font-size: 18px;
+    border-bottom: 1px solid lightgray;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.background_close{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    margin-top: -45px;
+    margin-left: 400px;
+}
+.background_panel{
+    height: 40px;
+    width: 420px;
+    color: blue;
+    display: flex;
+}
+.colors, .images, .files{
+    height: 30px;
+    width: 60px;
+    padding-left: 20px;
+    border-bottom: 1px solid lightgrey;
+    padding-top: 10px;
+}
+.blank{
+    height: 40px;
+    border-bottom: 1px solid lightgrey;
+    width: 175px;
+}
+/* background sub-block background_color style */
+.background_color{
+    display: none;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    width: 402px;
+    height: 190px;
+    position: absolute;
+    margin-top: -505px;
+    background-color: white;
+    margin-left: 450px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.background-lightseagreen, .background-teal, .background-spring, .background-green, .background-lightblue, .background-blue, .background-purple, .background-rebeccapurple, .background-steelblue, .background-midnightblue, .background-yellow, .background-orange, .background-peru, .background-orangered, .background-tomato, .background-red, .background-lightgray, .background-white, .background-lightslategrey, .background-gray, .background-black{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.background-lightseagreen{
+    background-color: lightseagreen;
+}
+.background-teal{
+    background-color: teal;
+}
+.background-spring{
+    background-color: springgreen;
+}
+.background-green{
+    background-color: green;
+}
+.background-lightblue{
+    background-color: lightblue;
+}
+.background-blue{
+    background-color: blue;
+}
+.background-purple{
+    background-color: purple;
+}
+.background-rebeccapurple{
+    background-color: rebeccapurple;
+}
+.background-steelblue{
+    background-color: steelblue;
+}
+.background-midnightblue{
+    background-color: midnightblue;
+}
+.background-yellow{
+    background-color: yellow;
+}
+.background-orange{
+    background-color: orange;
+}
+.background-peru{
+    background-color: peru;
+}
+.background-orangered{
+    background-color: orangered;
+}
+.background-tomato{
+    background-color: tomato;
+}
+.background-red{
+    background-color: red;
+}
+.background-white{
+    background-color: white;
+}
+.background-lightgray{
+    background-color: lightgray;
+}
+.background-lightslategrey{
+    background-color: lightslategrey;
+}
+.background-gray{
+    background-color: gray;
+}
+.background-black{
+    background-color: black;
+}
+
+/* background sub-block background_image style */
+.background_image{
+    display: none;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    width: 404px;
+    height: 190px;
+    position: absolute;
+    margin-top: -505px;
+    background-color: white;
+    margin-left: 450px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.background-image1, .background-image2, .background-image3, .background-image4, .background-image5, .background-image6, .background-image7, .background-image8, .background-image9{
+    height: 45px;
+    width: 110px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.background-image1{
+    background: url(Images/image1.jpg);
+}
+.background-image2{
+    background: url(Images/image2.jpg);
+}
+.background-image3{
+    background: url(Images/image3.jpg);
+}
+.background-image4{
+    background: url(Images/image4.jpg);
+}
+.background-image5{
+    background: url(Images/image5.jpg);
+}
+.background-image6{
+    background: url(Images/image6.jpg);
+}
+.background-image7{
+    background: url(Images/image7.jpg);
+}
+.background-image8{
+    background: url(Images/image8.jpg);
+}
+.background-image9{
+    background: url(Images/image9.jpg);
+}
+/* background sub-block background_file style */
+.background_file{
+    height: 100px;
+    width: 418px;
+    position: absolute;
+    margin-top: -505px;
+    background-color: white;
+    margin-left: 450px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    height: 70%;
+    width: 99%;
+}
+  
+.btn {
+    border: 1px solid lightgray;
+    color: gray;
+    background-color: white;
+    border-radius: 5px;
+    width: 380px;
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 27px;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+.browse{
+    height: 27px;
+    width: 80px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: 300px;
+    padding-top: 8px;
+    margin-top: -26px;
+    background: beige;
+
+}
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+/* signIn block style */
+.signIn{
+    position: absolute;
+    height: 220px;
+    width: 420px;
+    margin-top: -600px;
+    margin-left: 450px;
+    border-radius: 5px;
+    background-color: white;
+}
+.signIn_header{
+    height: 40px;
+    width: 420px;
+    font-size: 22px;
+    border-bottom: 1px solid lightgray;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+.signIn_input{
+    display: flex;
+    flex-flow: column;
+}
+.login, .password{
+    height: 30px;
+    width: 380px;
+    margin-top: 15px;
+    margin-left: 12px;
+    padding-left: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+.sign_btn{
+    height: 35px;
+    width: 395px;
+    margin-left: 12px;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    background-color: gray;
+}
+.sign_btn:hover{
+    background-color: darkslategray;
+}
+.input-empty, .input-wrong{
+    color: red;
+    position: absolute;
+    margin-top: 105px;
+    margin-left: 15px;
+    display: none;
+}
+/*  container2 block style */
+.container2{
+    width: 90%;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+.header2{
+    width: inherit;
+    height: 100px;
+    background: black;
+    border: 1px solid #000;
+}
+.panel2{
+    display: flex;
+    height: 50px;
+    width: 200px;
+    margin: 25px auto;
+}
+.save, .grid, .list-ul, .list-ol{
+    height: 40px;
+    width: 45px;
+    padding-top: 10px;
+    padding-left: 5px;
+    background: white;
+}
+.save{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.list-ol{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.uil-save, .uil-grid, .uil-list-ul, .uil-list-ol{
+    font-size: 25px;
+}
+.save:hover,
+.grid:hover,
+.list-ul:hover,
+.list-ol:hover{
+background: lightgrey;
+}
+.area{
+    width: 90%;
+    min-height: 600px;
+    border: none;
+    outline: none;
+}
+/* create table block style */
+.create-table{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    margin-top: -650px;
+    margin-left: 200px;
+    color: darkgray;
+    border-radius: 5px;
+    background-color: white;
+}
+.create-table_header{
+    width: 690px;
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: black;
+    border-bottom: 1px solid lightgray;
+}
+.create-table_close{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    margin-left: 650px;
+    margin-top: -30px;
+}
+.table-invalid{
+    position: absolute;
+    color: red ;
+    margin-top: 260px;
+    margin-left: 10px;
+    display: none;
+}
+.create-table_main{
+    height: 340px;
+    width: inherit;
+    display: flex;
+}
+.create-table_left, .create-table_right{
+    height: inherit;
+    width: 50%;
+}
+.trCount, .tdWidth, .borderWidth, .tdCount, .tdHeight{
+    height: 35px;
+    width: 320px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    outline: none;
+}
+h4{
+    margin-bottom: 0;
+    padding-left: 10px;
+    width: 140px;
+}
+.tableReset, .tableCreate{
+    height: 40px;
+    width: 330px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    color: white;
+}
+.tableReset{
+    background-color: red;
+}
+.tableReset:hover{
+    background-color: rgb(228, 135, 135);
+}
+.tableCreate{
+    margin-top: 18px;
+    background-color: rgb(40, 155, 92);
+}
+.tableCreate:hover{
+    background-color: rgb(108, 163, 133);
+}
+.table-select{
+    display: flex;
+}
+.tdBorderStyle, .tdBorderColor{
+    height: 35px;
+    width: 162px;
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+    color: gray;
+    border: 1px solid lightgray;
+}
+.tdBorderColor{
+    margin-left: 17px;
+}
+/* create ol and ul blocks style */
+.create-ol, .create-ul{
+    position: absolute;
+    height: 300px;
+    width: 480px;
+    margin-left: 320px;
+    margin-top: -650px;
+    border-radius: 5px;
+    color: gray;
+    background-color: white;
+}
+.create-ol_header, .create-ul_header{
+    height: 40px;
+    width: 470px;
+    border-bottom: 1px solid lightgray;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+    color: black;
+}
+.create-ol_close, .create-ul_close{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -30px;
+}
+.ol-invalid, .ul-invalid{
+    position: absolute;
+    color: red ;
+    margin-top: -100px;
+    margin-left: 10px;
+    display: none;
+}
+.create-ol_main, .create-ul_main{
+    height: 234px;
+    width: 478px;
+}
+.countOlLi, .typeMarkOl, .countUlLi, .typeMarkUl{
+    height: 30px;
+    width: 450px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    outline: none;
+    color: gray;
+}
+.olReset, .createOl, .ulReset, .createUl{
+    height: 30px;
+    width: 220px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+
+}
+.olReset, .ulReset{
+    background-color: red;
+}
+.olReset:hover,
+.ulReset:hover{
+    background-color: rgb(228, 135, 135);
+}
+.createOl, .createUl{
+    background-color: rgb(40, 155, 92);
+}
+.createUl:hover,
+.createOl:hover{
+    background-color: rgb(108, 163, 133);
+}
+/* sign out block style */
+.signOutContainer, .signOutContainer2{
+    width: 270px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: white;
+}
+.signOutContainer{
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 450px
+}
+.signOutContainer2{
+    display: flex;
+    justify-content: space-around;
+}
+.cancel, .signOut{
+    margin-top: 10px;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+.signOut{
+    background-color: black;
+}
+.signOut:hover{
+    opacity: 0.5;
+}
+.cancel{
+    background-color: red;
+}
+.cancel:hover{
+    opacity: 0.5;
+}
+/* classes that are being added */
+.boldText{
+    font-weight: bold;
+}
+.italicText{
+    font-style: italic;
+}
+.underlineText{
+    text-decoration: underline;
+}
+.strike-throughText{
+    text-decoration: line-through;
+}
+.align-leftText{
+    text-align: left;
+}
+.align-centerText{
+    text-align: center;
+}
+.align-rightText{
+    text-align: right;
+}
